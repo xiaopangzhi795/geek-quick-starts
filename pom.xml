@@ -6,11 +6,35 @@
 
     <groupId>com.geek45</groupId>
     <artifactId>geek-quick-starts</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>geek-quick-starter-commons</module>
+    </modules>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <java.version>1.8</java.version>
+        <geek-commons.version>1.0.3</geek-commons.version>
+        <geek-result.version>1.0.3</geek-result.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--commons-->
+            <dependency>
+                <groupId>com.geek45</groupId>
+                <artifactId>commons</artifactId>
+                <version>${geek-commons.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.geek45</groupId>
+                <artifactId>geek-result</artifactId>
+                <version>${geek-result.version}</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>
