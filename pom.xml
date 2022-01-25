@@ -11,12 +11,14 @@
     <description>快速开始pom，不需要再一一引入依赖</description>
     <modules>
         <module>geek-quick-starter-commons</module>
+        <module>geek-quick-starter-thread</module>
     </modules>
 
     <properties>
         <java.version>1.8</java.version>
         <geek-commons.version>1.0.3</geek-commons.version>
         <geek-result.version>1.0.3</geek-result.version>
+        <geek-thread.version>1.0.RELEASE</geek-thread.version>
     </properties>
 
     <inceptionYear>2022</inceptionYear>
@@ -72,6 +74,12 @@
                 <groupId>com.geek45</groupId>
                 <artifactId>geek-result</artifactId>
                 <version>${geek-result.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.geek45</groupId>
+                <artifactId>geek-thread</artifactId>
+                <version>${geek-thread.version}</version>
             </dependency>
 
         </dependencies>
