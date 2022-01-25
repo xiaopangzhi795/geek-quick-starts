@@ -8,6 +8,7 @@
     <artifactId>geek-quick-starts</artifactId>
     <packaging>pom</packaging>
     <version>1.0.RELEASE</version>
+    <description>快速开始pom，不需要再一一引入依赖</description>
     <modules>
         <module>geek-quick-starter-commons</module>
     </modules>
@@ -17,6 +18,30 @@
         <geek-commons.version>1.0.3</geek-commons.version>
         <geek-result.version>1.0.3</geek-result.version>
     </properties>
+
+    <inceptionYear>2022</inceptionYear>
+
+    <developers>
+        <!--开发者信息-->
+        <developer>
+            <id>owner</id>
+            <name>rubik</name>
+            <url>https://www.geek45.com</url>
+            <email>rubixgeek795@gmail.com</email>
+            <roles>
+                <role>owner</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <url>https://www.geek45.com</url>
+            <name>极客</name>
+        </license>
+    </licenses>
+
 
     <distributionManagement>
         <snapshotRepository>
@@ -49,8 +74,9 @@
                 <version>${geek-result.version}</version>
             </dependency>
 
-
         </dependencies>
     </dependencyManagement>
+
+
 
 </project>
