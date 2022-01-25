@@ -7,7 +7,7 @@
     <groupId>com.geek45</groupId>
     <artifactId>geek-quick-starts</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.RELEASE</version>
     <modules>
         <module>geek-quick-starter-commons</module>
     </modules>
@@ -17,6 +17,22 @@
         <geek-commons.version>1.0.3</geek-commons.version>
         <geek-result.version>1.0.3</geek-result.version>
     </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>rdc-releases</id>
+            <name>snapshots</name>
+            <url>https://packages.aliyun.com/maven/repository/2019615-snapshot-1eah45/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+
+        <repository>
+            <id>rdc-snapshots</id>
+            <name>releases</name>
+            <url>https://packages.aliyun.com/maven/repository/2019615-release-gAuZKI/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </repository>
+    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>
